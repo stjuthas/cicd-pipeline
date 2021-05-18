@@ -1,0 +1,10 @@
+{
+    "name": "cicd-pipeline",
+    "version": "1.0.0",
+    "description": "How to Build a Docker Jenkins Pipeline to Implement CI/CD Workflow",
+    "author": "Juthas Okari>",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    }
+  }
