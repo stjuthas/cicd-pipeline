@@ -1,0 +1,33 @@
+apiversion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd-pipeline
+  namespace: development
+spec:
+  replicas: 1
+  selector:
+    matchlabels:
+      cicd: server
+  template:
+    metadata:
+      labels:
+        cicd: server
+    spec:
+      containers:
+      - name: cicd-server
+      image: cicd-pipeline:1.0
+---
+apiVersion: v1
+kind: service
+metadata:
+  name: cicd-entrypoint
+  namespace: development
+spec:
+  type: nodeport
+  selector:
+    cicd: server
+  ports: 
+  - port: 8500
+    targetport: 8500
+    nodeport: 30001
+

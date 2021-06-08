@@ -1,14 +1,22 @@
+Course End project-This is the Older version Project.
 Describe the following tools
-Git:
 
+Git:Helps to add,commit and push changes to github 
 
-Github:
+Github:it is the code hosting platform for version control,
+it helps to work us to work together on a project fron anywhere,
+its where you pull requests commit and branch repositories.
 
-Docker:
+Docker:is used to create,deploy and run applications by using 
+containers.
 
-Docker hub:
+Docker hub:host repository service provided by Docker for 
+finding and sharing container images.
 
-Linux:
+Linux:it is an open source operating system,it manages 
+system's hardware and resources like cpu,memory and stoarage
 
-Jenkins:
+Jenkins:it is an open source automation tool,it is used to
+build and test software projects continuously making it easier 
+for developers to integrate changes to the project.
 

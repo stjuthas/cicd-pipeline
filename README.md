@@ -72,3 +72,15 @@ docker tag local-image:tagname new-repo:tagname
 docker push new-repo:tagname
 
 
+### In this Kubernetes YAML file, we have two objects, separated by the ---:
+
+A Deployment, describing a scalable group of identical pods. In this case, you’ll get just one replica, or copy of your pod, and that pod (which is described under the template: key) has just one container in it, based off of your bulletinboard:1.0 image from the previous step in this tutorial.
+A NodePort service, which will route traffic from port 30001 on your host to port 8080 inside the pods it routes to, allowing you to reach your bulletin board from the network.
+Also, notice that while Kubernetes YAML can appear long and complicated at first, it almost always follows the same pattern:
+
+The apiVersion, which indicates the Kubernetes API that parses this object
+The kind indicating what sort of object this is
+Some metadata applying things like names to your objects
+The spec specifying all the parameters and configurations of your object.
+
+
